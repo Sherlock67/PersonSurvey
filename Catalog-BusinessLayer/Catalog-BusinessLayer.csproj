@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\Catalog-DataAccessLayer\Catalog-DataAccessLayer.csproj" />
   </ItemGroup>
 
 </Project>

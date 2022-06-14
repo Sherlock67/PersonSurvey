@@ -456,6 +456,9 @@
         }
       },
       "Catalog-BusinessLayer/1.0.0": {
+        "dependencies": {
+          "Catalog-DataAccessLayer": "1.0.0"
+        },
         "runtime": {
           "Catalog-BusinessLayer.dll": {}
         }
