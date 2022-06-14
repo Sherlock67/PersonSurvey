@@ -11,4 +11,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Catalog-BusinessLayer\Catalog-BusinessLayer.csproj" />
+    <ProjectReference Include="..\Catalog-DataAccessLayer\Catalog-DataAccessLayer.csproj" />
+  </ItemGroup>
+
 </Project>

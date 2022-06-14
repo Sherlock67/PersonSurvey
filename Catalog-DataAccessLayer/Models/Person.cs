@@ -22,16 +22,10 @@ namespace Catalog_DataAccessLayer.Models
         [Required(ErrorMessage = "Please provide your password")]
        
         public string Password { get; set; }
-        [Required(ErrorMessage = "Please provide Gender")]
-        public string Gender { get; set; }
+        
+        public PersonProfile personProfile { get; set; }    
 
-        public string Mobile { get; set; }
+        //public PersonAddress personAddress { get;set; }
 
-        public string NationalId { get; set; }
-        [Required]
-        public int Age { get; set; }
-        [Required]
-        public string Educational_Information { get; set; }
-
-    }
+    } 
 }
