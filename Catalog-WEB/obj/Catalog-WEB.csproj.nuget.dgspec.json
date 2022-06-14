@@ -4,14 +4,14 @@
     "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-WEB\\Catalog-WEB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-WEB\\Catalog-WEB.csproj": {
+    "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-DataAccessLayer\\Catalog-DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-WEB\\Catalog-WEB.csproj",
-        "projectName": "Catalog-WEB",
-        "projectPath": "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-WEB\\Catalog-WEB.csproj",
+        "projectUniqueName": "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-DataAccessLayer\\Catalog-DataAccessLayer.csproj",
+        "projectName": "Catalog-DataAccessLayer",
+        "projectPath": "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-DataAccessLayer\\Catalog-DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\CMED\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-WEB\\obj\\",
+        "outputPath": "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,104 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-WEB\\Catalog-WEB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-WEB\\Catalog-WEB.csproj",
+        "projectName": "Catalog-WEB",
+        "projectPath": "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-WEB\\Catalog-WEB.csproj",
+        "packagesPath": "C:\\Users\\CMED\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-WEB\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\CMED\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-DataAccessLayer\\Catalog-DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\CMED\\source\\repos\\Catalog-WEB\\Catalog-DataAccessLayer\\Catalog-DataAccessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

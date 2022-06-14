@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Catalog_DataAccessLayer.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,9 @@ namespace Catalog_DataAccessLayer.Data
 
         }
         
+        public DbSet<Person> person { get; set; }
 
+        public DbSet<PersonProfile> personProfiles { get; set; }
 
 
     }
