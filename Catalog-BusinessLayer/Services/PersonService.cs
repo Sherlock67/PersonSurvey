@@ -64,7 +64,17 @@ namespace Catalog_BusinessLayer.Services
                 throw;
             }
         }
-       
+        public async Task<IEnumerable<Person>> SearchByName(string name)
+        {
+            try
+            {
+                return await _person.Search(name);
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
 
+        }
     }
 }

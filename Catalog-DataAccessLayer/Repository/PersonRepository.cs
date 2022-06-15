@@ -55,7 +55,7 @@ namespace Catalog_DataAccessLayer.Repository
             {
                 query = query.Where(e =>e.FirstName.Contains(name) || e.LastName.Contains(name));
             }
-            return  query.ToList();
+            return query.ToList();
         }
 
         public void Update(Person entity)

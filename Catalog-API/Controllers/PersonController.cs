@@ -74,5 +74,23 @@ namespace Catalog_API.Controllers
                 return false;
             }
         }
+
+        [HttpGet("SearchPerson")]
+
+        public async Task SearchPersonAsync(string name)
+        {
+            try
+            {
+
+                await _personService.SearchByName(name);
+                //return true;
+
+            }
+            catch(Exception ex)
+            {
+               
+                throw ex;
+            }
+        }
     }
 }
