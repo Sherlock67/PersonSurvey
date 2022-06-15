@@ -19,7 +19,8 @@ namespace Catalog_DataAccessLayer.Models
         [Required(ErrorMessage = "Please provide your password")]
         public string Password { get; set; }
         
-      //  public PersonProfile personProfile { get; set; }    
+        
+        //public PersonProfile personProfile { get; set; }    
 
         //public PersonAddress personAddress { get;set; }
 

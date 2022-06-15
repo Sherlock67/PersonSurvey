@@ -47,6 +47,17 @@ namespace Catalog_DataAccessLayer.Repository
            
           
         }
+
+        public async Task<IEnumerable<Person>> Search(string name)
+        {
+            IQueryable<Person> query = _db.person;
+            if (!string.IsNullOrEmpty(name))
+            {
+                query = query.Where(e =>e.FirstName.Contains(name) || e.LastName.Contains(name));
+            }
+            return  query.ToList();
+        }
+
         public void Update(Person entity)
         {
             _db.person.Update(entity);

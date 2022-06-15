@@ -19,5 +19,7 @@ namespace Catalog_DataAccessLayer.Interfaces
 
         public void Delete(T entity);
 
+       
+
     }
 }

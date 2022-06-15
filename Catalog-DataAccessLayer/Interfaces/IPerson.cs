@@ -9,5 +9,8 @@ namespace Catalog_DataAccessLayer.Interfaces
 {
     public interface IPerson : IRepository<Person>
     {
+        Task<IEnumerable<Person>> Search(string name);
+
+
     }
 }
