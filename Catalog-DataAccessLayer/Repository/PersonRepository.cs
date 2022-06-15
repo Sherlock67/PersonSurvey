@@ -24,19 +24,33 @@ namespace Catalog_DataAccessLayer.Repository
         }
         public void Delete(Person entity)
         {
-            throw new NotImplementedException();
+            _db.Remove(entity);
+            _db.SaveChanges();
+            
         }
         public IEnumerable<Person> GetAll()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _db.person.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+           
         }
         public Person GetById(int id)
         {
-            throw new NotImplementedException();
+          
+             return _db.person.Where(x => x.PersonID == id).SingleOrDefault();
+           
+          
         }
         public void Update(Person entity)
         {
-            throw new NotImplementedException();
+            _db.person.Update(entity);
+            _db.SaveChanges();
         }
     }
 }

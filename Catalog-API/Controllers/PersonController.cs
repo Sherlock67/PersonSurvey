@@ -16,7 +16,6 @@ namespace Catalog_API.Controllers
             _personService = personService;
         }
         [HttpPost("AddPerson")]
-
         public async Task<object> CreateNewPerson([FromBody] Person person)
         {
             try
@@ -26,6 +25,53 @@ namespace Catalog_API.Controllers
             catch(Exception ex)
             {
                 throw ex;
+            }
+        }
+        [HttpGet("GetAll")]
+        public List<Person> GetAllPeople()
+        {
+            var data = _personService.GetAllPerson();
+            return data.ToList();
+
+        }
+        [HttpGet("GetPersonById")]
+        public Person GetPersonById(int id)
+        {
+            try
+            {
+                return _personService.GetPersonById(id);
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
+        [HttpDelete("DeletePerson")]
+        public bool DeletePerson(int id)
+        {
+            try
+            {
+                _personService.DeletePerson(id);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        [HttpPut("UpdatePerson")]
+        public bool UpdatePerson(Person person)
+        {
+            try
+            {
+                _personService.UpdatePerson(person);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
     }
