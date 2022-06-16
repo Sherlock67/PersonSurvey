@@ -50,14 +50,11 @@ namespace Catalog_BusinessLayer.Services
             return _person.GetById(id);
         }
 
-        public async Task UpdatePerson(Person p)
+        public async Task UpdatePerson(PersonViewModel p)
         {
             try
             {
-
-                _person.Update(p);
-
-
+               _person.Update(p.person);
             }
             catch (Exception)
             {

@@ -63,5 +63,17 @@ namespace Catalog_DataAccessLayer.Repository
             _db.person.Update(entity);
             _db.SaveChanges();
         }
+
+        public void UpdatePerson(PersonViewModel p)
+        {
+            _db.person.Update(p.person);
+            _db.SaveChanges();
+            //throw new NotImplementedException();
+        }
+
+        //public void Update(PersonViewModel p)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

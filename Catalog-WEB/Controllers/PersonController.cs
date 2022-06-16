@@ -33,7 +33,6 @@ namespace Catalog_WEB.Controllers
         }
 
         public async Task<IActionResult> AllPerson()
-        
         {
             List<Person> ListPeople = new List<Person>();
             using(var client = new HttpClient())
@@ -70,7 +69,7 @@ namespace Catalog_WEB.Controllers
         [HttpGet]
         public async Task<IActionResult> UpdatePerson(int id)
         {
-            Person p = new Person();
+            PersonViewModel p = new PersonViewModel();
             using (var client = new HttpClient())
             {
                 client.DefaultRequestHeaders.Clear();
@@ -80,7 +79,7 @@ namespace Catalog_WEB.Controllers
                 if (personId.IsSuccessStatusCode)
                 {
                     var personList = personId.Content.ReadAsStringAsync().Result;
-                    p = JsonConvert.DeserializeObject<Person>(personList);
+                    p = JsonConvert.DeserializeObject<PersonViewModel>(personList);
                 }
 
             }
@@ -88,7 +87,7 @@ namespace Catalog_WEB.Controllers
 
         }
         [HttpPost]
-        public async Task<IActionResult> UpdatePerson(Person person)
+        public async Task<IActionResult> UpdatePerson(PersonViewModel person)
         {
 
             string custommsg = string.Empty;

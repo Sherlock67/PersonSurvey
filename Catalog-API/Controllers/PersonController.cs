@@ -62,7 +62,7 @@ namespace Catalog_API.Controllers
             }
         }
         [HttpPut("UpdatePerson")]
-        public bool UpdatePerson(Person person)
+        public bool UpdatePerson(PersonViewModel person)
         {
             try
             {

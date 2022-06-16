@@ -1,3 +1,9 @@
+C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.csproj.AssemblyReference.cache
+C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.AssemblyInfoInputs.cache
+C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.AssemblyInfo.cs
+C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.csproj.CoreCompileInputs.cache
+C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\bin\Debug\net6.0\appsettings.json
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\bin\Debug\net6.0\Catalog-API.exe
@@ -45,13 +51,6 @@ C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\bin\Debug\net6.0\Catalog-Busi
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\bin\Debug\net6.0\Catalog-DataAccessLayer.dll
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\bin\Debug\net6.0\Catalog-BusinessLayer.pdb
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\bin\Debug\net6.0\Catalog-DataAccessLayer.pdb
-C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.csproj.AssemblyReference.cache
-C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.AssemblyInfoInputs.cache
-C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.AssemblyInfo.cs
-C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.csproj.CoreCompileInputs.cache
-C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\scopedcss\bundle\Catalog-API.styles.css
@@ -61,3 +60,4 @@ C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\refint\Catal
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.pdb
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.genruntimeconfig.cache
 C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\ref\Catalog-API.dll
+C:\Users\CMED\source\repos\Catalog-WEB\Catalog-API\obj\Debug\net6.0\Catalog-API.MvcApplicationPartsAssemblyInfo.cs

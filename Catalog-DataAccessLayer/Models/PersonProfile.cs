@@ -23,10 +23,10 @@ namespace Catalog_DataAccessLayer.Models
         public int Age { get; set; }
         
         public string NationalId { get; set; }
-
+        
         [Required(ErrorMessage = "Please provide Educational Information")]
         public string Educational_Information { get; set; }
-        public int PersonID { get; set; }
+        //public int PersonID { get; set; }
         public Person person { get; set; }
     }
 }

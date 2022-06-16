@@ -10,8 +10,6 @@ namespace Catalog_DataAccessLayer.Data
 {
     public class ApplicationDbContext : DbContext
     {
-
-
         public ApplicationDbContext()
         {
 
@@ -25,12 +23,8 @@ namespace Catalog_DataAccessLayer.Data
             }
         }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-        {
-
-
-
-        }
-        
+        { 
+        }   
         public DbSet<Person> person { get; set; }
 
         public DbSet<PersonProfile> personProfiles { get; set; }

@@ -82,8 +82,7 @@ namespace Catalog_DataAccessLayer.Migrations
 
                     b.HasKey("ProfileID");
 
-                    b.HasIndex("PersonID")
-                        .IsUnique();
+                    b.HasIndex("PersonID");
 
                     b.ToTable("personProfiles");
                 });
@@ -91,18 +90,12 @@ namespace Catalog_DataAccessLayer.Migrations
             modelBuilder.Entity("Catalog_DataAccessLayer.Models.PersonProfile", b =>
                 {
                     b.HasOne("Catalog_DataAccessLayer.Models.Person", "person")
-                        .WithOne("personProfile")
-                        .HasForeignKey("Catalog_DataAccessLayer.Models.PersonProfile", "PersonID")
+                        .WithMany()
+                        .HasForeignKey("PersonID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("person");
-                });
-
-            modelBuilder.Entity("Catalog_DataAccessLayer.Models.Person", b =>
-                {
-                    b.Navigation("personProfile")
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
